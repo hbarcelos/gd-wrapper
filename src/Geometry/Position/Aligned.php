@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Position;
+namespace Hbarcelos\GdWrapper\Geometry\Position;
 
-use Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment;
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Alignment\Alignment;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents an aligned positioning mode.
@@ -16,12 +16,12 @@ use Hjpbarcelos\GdWrapper\Geometry\Point;
 class Aligned implements Position
 {
 	/**
-	 * @var Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment The vertical alignments
+	 * @var Hbarcelos\GdWrapper\Geometry\Alignment\Alignment The vertical alignments
 	 */
 	private $vertical;
 	
 	/**
-	 * @var Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment The horizontal alignments
+	 * @var Hbarcelos\GdWrapper\Geometry\Alignment\Alignment The horizontal alignments
 	 */
 	private $horizontal;
 	
@@ -33,8 +33,8 @@ class Aligned implements Position
 	 * * `__construct($alignment)`: Both vertical and horizontal axis will be have the same alignment.
 	 * * `__construct($vertical, $horizontal)`: Each axis will have its own alignment.
 	 *
-	 * @param Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment $horizontal
-	 * @param Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment $vertical
+	 * @param Hbarcelos\GdWrapper\Geometry\Alignment\Alignment $horizontal
+	 * @param Hbarcelos\GdWrapper\Geometry\Alignment\Alignment $vertical
 	 */
 	public function __construct(Alignment $horizontal, Alignment $vertical = null)
 	{
@@ -50,7 +50,7 @@ class Aligned implements Position
 	/**
 	 * Obtains the vertical alignment of the position.
 	 *
-	 * @return Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment
+	 * @return Hbarcelos\GdWrapper\Geometry\Alignment\Alignment
 	 */
 	public function getVertical()
 	{
@@ -72,7 +72,7 @@ class Aligned implements Position
 	/**
 	 * Obtains the horizontal alignment of the position.
 	 *
-	 * @return Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment
+	 * @return Hbarcelos\GdWrapper\Geometry\Alignment\Alignment
 	 */
 	public function getHorizontal()
 	{
@@ -93,7 +93,7 @@ class Aligned implements Position
 	
 	/**
 	 * {@inherit-doc}
-	 * @see Hjpbarcelos\GdWrapper\Geometry\Position\Position::getStartPoint()
+	 * @see Hbarcelos\GdWrapper\Geometry\Position\Position::getStartPoint()
 	 */
 	public function getStartPoint(Point $outsideDimensions, Point $insideDimensions)
 	{

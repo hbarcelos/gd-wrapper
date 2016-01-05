@@ -1,5 +1,5 @@
 {
-    "name": "hjpbarcelos/gd-wrapper",
+    "name": "hbarcelos/gd-wrapper",
     "description": "Object oriented wrapper for PHP's GD2 library",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\Hjpbarcelos\\GdWrapper\\": "src"
+            "\\Hbarcelos\\GdWrapper\\": "src"
         }
     }
 }

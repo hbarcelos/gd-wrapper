@@ -4,11 +4,11 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action;
+namespace Hbarcelos\GdWrapper\Action;
 
-use Hjpbarcelos\GdWrapper\Action\ResizeMode\Mode;
-use Hjpbarcelos\GdWrapper\Resource\EmptyResourceFactory;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Action\ResizeMode\Mode;
+use Hbarcelos\GdWrapper\Resource\EmptyResourceFactory;
+use Hbarcelos\GdWrapper\Resource\Resource;
 
 /**
  * Abstraction for resizing an image.
@@ -22,9 +22,9 @@ class Resize extends AbstractAction
      *
      * Creates a resize operation object.
      *
-     * @param Hjpbarcelos\GdWrapper\Action\ResizeMode\Mode $mode The mode of resizing.
+     * @param Hbarcelos\GdWrapper\Action\ResizeMode\Mode $mode The mode of resizing.
      *
-     * @see Hjpbarcelos\GdWrapper\Action\AbstractAction::__construct()
+     * @see Hbarcelos\GdWrapper\Action\AbstractAction::__construct()
      */
     public function __construct(Mode $mode, $resourceFactoryClass = null)
     {
@@ -37,7 +37,7 @@ class Resize extends AbstractAction
      *
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Action\Action::execute()
+     * @see Hbarcelos\GdWrapper\Action\Action::execute()
      */
     public function execute(Resource $src) {
         $dimensions = null;

@@ -4,11 +4,11 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Writer;
+namespace Hbarcelos\GdWrapper\Io\Writer;
 
-use Hjpbarcelos\GdWrapper\Io\Exception;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
-use Hjpbarcelos\GdWrapper\Io\Preset;
+use Hbarcelos\GdWrapper\Io\Exception;
+use Hbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Io\Preset;
 
 /**
  * Represents an output "device" for resources.
@@ -39,7 +39,7 @@ interface Writer
      *
      * @throws Exception If cannot write the contents on file system.
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Preset
+     * @see Hbarcelos\GdWrapper\Io\Preset
      */
     public function write(
         $pathName,

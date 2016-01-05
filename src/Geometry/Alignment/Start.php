@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Alignment;
+namespace Hbarcelos\GdWrapper\Geometry\Alignment;
 
-use Hjpbarcelos\GdWrapper\Geometry\Padding\Padding;
+use Hbarcelos\GdWrapper\Geometry\Padding\Padding;
 
 /**
  * Positions the inner segment at the beginning of the outer segment.
@@ -25,7 +25,7 @@ class Start extends AbstractAlignment
 	 * Will return `0` plus the value of the padding.
 	 *
 	 * {@inherit-doc}
-	 * @see Hjpbarcelos\GdWrapper\Geometry\Alignment\Alignment::getPosition()
+	 * @see Hbarcelos\GdWrapper\Geometry\Alignment\Alignment::getPosition()
 	 */
 	public function getPosition($outsideDimension, $insideDimension)
 	{

@@ -1,10 +1,10 @@
 <?php
 /**
- * Creates class \Hjpbarcelos\GdWrapper\Resource
+ * Creates class \Hbarcelos\GdWrapper\Resource
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Concrete implementation of a wrapper for GD2 image resource type.

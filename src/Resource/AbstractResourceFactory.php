@@ -1,20 +1,20 @@
 <?php
 /**
- * Creates class \Hjpbarcelos\GdWrapper\Resource\AbstractResourceFactory.
+ * Creates class \Hbarcelos\GdWrapper\Resource\AbstractResourceFactory.
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
- * Abstract factory for `\Hjpbarcelos\GdWrapper\Resource\Resource` types.
+ * Abstract factory for `\Hbarcelos\GdWrapper\Resource\Resource` types.
  */
 abstract class AbstractResourceFactory
 {
     /**
      * @var string Fully qualified name for the Resource interface
      */
-    const RESOURCE_INTERFACE = '\\Hjpbarcelos\\GdWrapper\\Resource\\Resource';
+    const RESOURCE_INTERFACE = '\\Hbarcelos\\GdWrapper\\Resource\\Resource';
     
     /**
      * @var string The fully qualified name of the class created by the factory.
@@ -29,7 +29,7 @@ abstract class AbstractResourceFactory
      * @throws \InvalidArgumentException If `$className` is not a valid class name.
      * @throws \InvalidArgumentException If `$className` is not instantiable.
      * @throws \DomainException If `$className` is not subclass of
-     *     \Hjpbarcelos\GdWrapper\Resource\Resource.
+     *     \Hbarcelos\GdWrapper\Resource\Resource.
      */
     protected function __construct($className)
     {
@@ -46,7 +46,7 @@ abstract class AbstractResourceFactory
      * @throws \InvalidArgumentException If `$className` is not a valid class name.
      * @throws \InvalidArgumentException If `$className` is not instantiable.
      * @throws \DomainException If `$className` is not subclass of
-     *     \Hjpbarcelos\GdWrapper\Resource\Resource.
+     *     \Hbarcelos\GdWrapper\Resource\Resource.
      */
     final protected function setClassName($className)
     {
@@ -80,9 +80,9 @@ abstract class AbstractResourceFactory
     }
     
     /**
-     * Creates a concrete instance of `\Hjpbarcelos\GdWrapper\Resource\Resource`.
+     * Creates a concrete instance of `\Hbarcelos\GdWrapper\Resource\Resource`.
      *
-     * @return Hjpbarcelos\GdWrapper\Resource\Resource
+     * @return Hbarcelos\GdWrapper\Resource\Resource
      *
      * @throws \DomainException If factory cannot determine which type of resource to create.
      * @throws \LogicException If there is an error in creating the product, like

@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Writer;
+namespace Hbarcelos\GdWrapper\Io\Writer;
 
-use Hjpbarcelos\GdWrapper\Io\Exception;
-use Hjpbarcelos\GdWrapper\Io\Preset;
+use Hbarcelos\GdWrapper\Io\Exception;
+use Hbarcelos\GdWrapper\Io\Preset;
 
 /**
  * Defines an implementation of a I/O device for PNG files.
@@ -21,7 +21,7 @@ class PngWriter extends AbstractWriter
      *
      * @param int $filters (optional) Allows reducing the PNG file size.
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Writer\AbstractWriter::doWrite()
+     * @see Hbarcelos\GdWrapper\Io\Writer\AbstractWriter::doWrite()
      * @link http://br.php.net/manual/en/function.imagepng.php imagepng
      * 		function on PHP Manual
      */

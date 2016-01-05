@@ -3,9 +3,9 @@
  * Defines the Proportional resizing mode.
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\ResizeMode;
+namespace Hbarcelos\GdWrapper\Action\ResizeMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents a proportional resizing.
@@ -70,7 +70,7 @@ class Proportional implements Mode
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
+     * @see Hbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
      */
     public function getNewDimensions($width, $height)
     {

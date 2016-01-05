@@ -4,7 +4,7 @@
  *  
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Alignment;
+namespace Hbarcelos\GdWrapper\Geometry\Alignment;
 
 /**
  * Defines an abstraction for alignmenting on a line.

@@ -3,9 +3,9 @@
  * Defines the KeepRatio resizing mode.
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\ResizeMode;
+namespace Hbarcelos\GdWrapper\Action\ResizeMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents a resizing that respects image aspect ratio.
@@ -105,7 +105,7 @@ class KeepRatio implements Mode
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
+     * @see Hbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
      *
      * @throws \InvalidArgumentException If `$width <= 0` or `$height <= 0` .
      */

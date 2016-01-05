@@ -5,7 +5,7 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Image;
+namespace Hbarcelos\GdWrapper\Image;
 
 /**
  * Holds information about an image on file system.

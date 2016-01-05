@@ -5,7 +5,7 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Io;
+namespace Hbarcelos\GdWrapper\Io;
 
 /**
  * Contains some preset definitions for image output quality.

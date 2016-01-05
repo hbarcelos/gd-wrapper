@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Reader;
+namespace Hbarcelos\GdWrapper\Io\Reader;
 
 /**
  * Defines an abstract implementation of an input "device" for resources.
@@ -16,7 +16,7 @@ class ReaderFactory
      *
      * For custom implementations of `Reader` interface, it must follow the convention:
      * <code>
-     * \Hjpbarcelos\GdWrapper\Io\Reader\&lt;TYPE&gt;Writer
+     * \Hbarcelos\GdWrapper\Io\Reader\&lt;TYPE&gt;Writer
      * </code>
      *
      * Notice that `&lt;TYPE&gt;` MUST be in `StudlyCaps`.
@@ -24,7 +24,7 @@ class ReaderFactory
      * @param string $type The type (extension) of the image or the path to it.
      *     If you provide a path, extension will be obtained internally.
      *
-     * @return Hjpbarcelos\GdWrapper\Io\Reader\Reader A reader for `$pathName`.
+     * @return Hbarcelos\GdWrapper\Io\Reader\Reader A reader for `$pathName`.
      *
      * @throws \DomainException If `$pathName` is not a supported type image.
      */

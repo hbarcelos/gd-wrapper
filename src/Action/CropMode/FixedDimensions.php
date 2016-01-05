@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Position\Position;
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Position\Position;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents a crop mode with fixed dimensions.
@@ -29,7 +29,7 @@ class FixedDimensions extends Positioned
      * Creates a crop mode with fixed dimensions.
      * From the starting point, it will crop pixels of defined width and height.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Position\Position $position The position of the cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Position\Position $position The position of the cropping.
      * @param int $width The width of the cropping.
      * @param int $height The height of the cropping.
      */
@@ -83,7 +83,7 @@ class FixedDimensions extends Positioned
     
     /**
      * {@inherit-doc}
-     * @see Hjpbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
+     * @see Hbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
      */
     public function getCropInfo($width, $height)
     {

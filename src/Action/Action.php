@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action;
+namespace Hbarcelos\GdWrapper\Action;
 
-use Hjpbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Resource\Resource;
 
 /**
  * Interface representing an action over an image.
@@ -15,7 +15,7 @@ interface Action {
     /**
      * Excecutes an action over images.
      *
-     * @param Hjpbarcelos\GdWrapper\Resource\Resource $src The source resource for resizing.
+     * @param Hbarcelos\GdWrapper\Resource\Resource $src The source resource for resizing.
      * 
      * @return void
      * 

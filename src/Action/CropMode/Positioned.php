@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Position\Position;
+use Hbarcelos\GdWrapper\Geometry\Position\Position;
 
 /**
  * Defines positioned cropping strategies commons.
@@ -14,7 +14,7 @@ use Hjpbarcelos\GdWrapper\Geometry\Position\Position;
 abstract class Positioned implements Mode
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Position\Position The position of the cropping
+     * @var Hbarcelos\GdWrapper\Geometry\Position\Position The position of the cropping
      */
     private $position;
     
@@ -31,7 +31,7 @@ abstract class Positioned implements Mode
     /**
      * Obtains the position of the cropping.
      *
-     * @return Hjpbarcelos\GdWrapper\Geometry\Position\Position
+     * @return Hbarcelos\GdWrapper\Geometry\Position\Position
      */
     public function getPosition()
     {

@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Wrapper for GD2 image resource type.

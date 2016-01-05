@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Reader;
+namespace Hbarcelos\GdWrapper\Io\Reader;
 
-use Hjpbarcelos\GdWrapper\Io\Exception;
+use Hbarcelos\GdWrapper\Io\Exception;
 
 /**
  * Defines an abstract implementation of a I/O device for resources.
@@ -16,7 +16,7 @@ abstract class AbstractReader implements Reader
 	/**
 	 * {@inheritdoc}
 	 *
-	 * @see Hjpbarcelos\GdWrapper\Io\Reader\Reader::read()
+	 * @see Hbarcelos\GdWrapper\Io\Reader\Reader::read()
 	 */
 	public function read($pathName)
 	{
@@ -36,13 +36,13 @@ abstract class AbstractReader implements Reader
 	
 	/**
 	 * Concrete implementors should implement this operation.
-	 * This is method is executed at the end of {@link Hjpbarcelos\GdWrapper\Io\Reader\Reader::write()}
+	 * This is method is executed at the end of {@link Hbarcelos\GdWrapper\Io\Reader\Reader::write()}
 	 *
 	 * @param string $pathName The path to a valid image.
 	 *
 	 * @return resource A GD2 image resource;
 	 *
-	 * @throws Hjpbarcelos\GdWrapper\Io\Exception If cannot read from file system
+	 * @throws Hbarcelos\GdWrapper\Io\Exception If cannot read from file system
 	 */
 	abstract protected function doRead($pathName);
 	

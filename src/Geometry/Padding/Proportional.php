@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Padding;
+namespace Hbarcelos\GdWrapper\Geometry\Padding;
 
 /**
  * Proportinal padding is calculated based on a proportion of the base dimension.
@@ -42,7 +42,7 @@ class Proportional implements Padding {
 	 *
 	 * {@inherit-doc}
 	 *
-	 * @see Hjpbarcelos\GdWrapper\Geometry\Padding\Padding::getDistance()
+	 * @see Hbarcelos\GdWrapper\Geometry\Padding\Padding::getDistance()
 	 */
 	public function getDistance($refDimension)
 	{

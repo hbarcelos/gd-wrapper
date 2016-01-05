@@ -3,9 +3,9 @@
  * Defines the Exact resizing mode.
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\ResizeMode;
+namespace Hbarcelos\GdWrapper\Action\ResizeMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents an exact resizing. That is, no matter which are the original
@@ -81,7 +81,7 @@ class Exact implements Mode
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
+     * @see Hbarcelos\GdWrapper\Action\ResizeMode\Mode::getNewDimensions()
      */
     public function getNewDimensions($width, $height)
     {

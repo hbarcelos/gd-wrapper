@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Alignment;
+namespace Hbarcelos\GdWrapper\Geometry\Alignment;
 
-use Hjpbarcelos\GdWrapper\Geometry\Padding\Padding;
+use Hbarcelos\GdWrapper\Geometry\Padding\Padding;
 
 /**
  * Common aspects of a Alignment class.

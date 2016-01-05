@@ -4,9 +4,9 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Information for cropping an image.
@@ -14,7 +14,7 @@ use Hjpbarcelos\GdWrapper\Geometry\Point;
 class CropInfo
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Point The start point of the cropping.
+     * @var Hbarcelos\GdWrapper\Geometry\Point The start point of the cropping.
      */
     private $startPoint;
 
@@ -31,7 +31,7 @@ class CropInfo
     /**
      * Information for cropping an image.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $start
+     * @param Hbarcelos\GdWrapper\Geometry\Point $start
      * @param unknown_type $width
      * @param unknown_type $height
      */
@@ -45,7 +45,7 @@ class CropInfo
     /**
      * Obtains the starting point of the cropping.
      *
-     * @return Hjpbarcelos\GdWrapper\Geometry\Point The starting point of the cropping.
+     * @return Hbarcelos\GdWrapper\Geometry\Point The starting point of the cropping.
      */
     public function getStartPoint()
     {
@@ -55,7 +55,7 @@ class CropInfo
     /**
      * Sets the starting point of the cropping.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $startPoint The starting point of the cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Point $startPoint The starting point of the cropping.
      *
      * @return void
      */

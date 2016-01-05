@@ -13,7 +13,7 @@ Add the following code to your `composer.json`:
 // ...
 "require": {
     // ...
-    "hjpbarcelos/gd-wrapper": "dev-master"
+    "hbarcelos/gd-wrapper": "dev-master"
 }
 // ...
 ```
@@ -64,7 +64,7 @@ Actions that can be applied over an image. Currently there are 3 supported actio
 If you just need to load files from a specific extensio, you can directly instantiate an image `Reader` for it:
 
 ```php
-use Hjpbarcelos\GdWrapper\Io\Reader;
+use Hbarcelos\GdWrapper\Io\Reader;
 
 $jpegReader = new JpegReader();
 $imageResource = $jpegReader->read('/path/to/file.jpg');
@@ -75,7 +75,7 @@ For gif and png images, the code is analogous, just changing `JpegReader` to `Gi
 When you have a more dynamic image input, where you can have images with different formats, you might consider using a factory to make things easier:
 
 ```php
-use Hjpbarcelos\GdWrapper\Io\ReaderFactory;
+use Hbarcelos\GdWrapper\Io\ReaderFactory;
 
 $file = '/path/to/file.png';
 
@@ -92,8 +92,8 @@ The above code samples are used to create raw GD resources, which are used on ba
 Once you have created a raw resource, you should wrap it into a `Resource` object. For images read from the disk, there is the `ImageResource` class:
 
 ```php
-use Hjpbarcelos\GdWrapper\Io\Reader;
-use Hjpbarcelos\GdWrapper\Resource\ImageResource;
+use Hbarcelos\GdWrapper\Io\Reader;
+use Hbarcelos\GdWrapper\Resource\ImageResource;
 
 $jpegReader = new JpegReader();
 $imageResource = $jpegReader->read('/path/to/file.jpg');
@@ -104,7 +104,7 @@ $objResource = new ImageResource($imageResource);
 The creation of the resource based on an image from the disk can be delegated to a `ImageResourceFactory` like this:
 
 ```php
-use Hjpbarcelos\GdWrapper\Resource\ResourceFactory;
+use Hbarcelos\GdWrapper\Resource\ResourceFactory;
 
 $resourceFactory = new ImageResourceFactory('/path/to/file.jpg');
 $objResource = $resourceFactory->create(); // Will create a ImageResource object
@@ -141,8 +141,8 @@ Different from reading images, when you are trying to write them, you should alr
 This is how you can convert a JPEG image to PNG:
 
 ```php
-use Hjpbarcelos\GdWrapper\Resource\ImageResource;
-use Hjpbarcelos\GdWrapper\Io\PngWriter;
+use Hbarcelos\GdWrapper\Resource\ImageResource;
+use Hbarcelos\GdWrapper\Io\PngWriter;
 
 $resourceFactory = new ImageResourceFactory('/path/to/file.jpg');
 $objResource = $resourceFactory->create(); // Will create a ImageResource object for /path/to/file.jpg
@@ -171,11 +171,11 @@ Resizing can be done in 3 ways:
 * Keeping the aspect ratio 
 
 ```php
-use Hjpbarcelos\GdWrapper\Resource\ResourceFactory;
-use Hjpbarcelos\GdWrapper\Action\Resize;
-use Hjpbarcelos\GdWrapper\Action\ResizeMode\Proportional as ResizeProportional;
-use Hjpbarcelos\GdWrapper\Action\ResizeMode\KeepRatio as ResizeKeepRatio;
-use Hjpbarcelos\GdWrapper\Action\ResizeMode\Exact as ResizeExact;
+use Hbarcelos\GdWrapper\Resource\ResourceFactory;
+use Hbarcelos\GdWrapper\Action\Resize;
+use Hbarcelos\GdWrapper\Action\ResizeMode\Proportional as ResizeProportional;
+use Hbarcelos\GdWrapper\Action\ResizeMode\KeepRatio as ResizeKeepRatio;
+use Hbarcelos\GdWrapper\Action\ResizeMode\Exact as ResizeExact;
 
 $resourceFactory = new ImageResourceFactory('/path/to/file.jpg');
 $objResource1 = $resourceFactory->create();
@@ -223,24 +223,24 @@ Cropping can be done in 4 ways:
 * Proportionally, based on a referencial position
 
 ```php
-use Hjpbarcelos\GdWrapper\Resource\ResourceFactory;
-use Hjpbarcelos\GdWrapper\Action\Crop;
-use Hjpbarcelos\GdWrapper\Action\CropMode\Proportional as CropProportional;
-use Hjpbarcelos\GdWrapper\Action\CropMode\FixedDimensions as CropFixedDimensions;
-use Hjpbarcelos\GdWrapper\Action\CropMode\FromEdges as CropFromEdges;
-use Hjpbarcelos\GdWrapper\Action\CropMode\FixedPoints as CropFixedPoints;
+use Hbarcelos\GdWrapper\Resource\ResourceFactory;
+use Hbarcelos\GdWrapper\Action\Crop;
+use Hbarcelos\GdWrapper\Action\CropMode\Proportional as CropProportional;
+use Hbarcelos\GdWrapper\Action\CropMode\FixedDimensions as CropFixedDimensions;
+use Hbarcelos\GdWrapper\Action\CropMode\FromEdges as CropFromEdges;
+use Hbarcelos\GdWrapper\Action\CropMode\FixedPoints as CropFixedPoints;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
-use Hjpbarcelos\GdWrapper\Geometry\Padding\Fixed as FixedPadding;
-use Hjpbarcelos\GdWrapper\Geometry\Padding\Proportional as ProportionalPadding;
+use Hbarcelos\GdWrapper\Geometry\Padding\Fixed as FixedPadding;
+use Hbarcelos\GdWrapper\Geometry\Padding\Proportional as ProportionalPadding;
 
-use Hjpbarcelos\GdWrapper\Geometry\Position\FixedPoint as FixedPointPosition;
-use Hjpbarcelos\GdWrapper\Geometry\Position\Aligned as AlignedPosition;
+use Hbarcelos\GdWrapper\Geometry\Position\FixedPoint as FixedPointPosition;
+use Hbarcelos\GdWrapper\Geometry\Position\Aligned as AlignedPosition;
 
-use Hjpbarcelos\GdWrapper\Geometry\Alignment\Center;
-use Hjpbarcelos\GdWrapper\Geometry\Alignment\Start;
-use Hjpbarcelos\GdWrapper\Geometry\Alignment\End;
+use Hbarcelos\GdWrapper\Geometry\Alignment\Center;
+use Hbarcelos\GdWrapper\Geometry\Alignment\Start;
+use Hbarcelos\GdWrapper\Geometry\Alignment\End;
 
 $resourceFactory = new ImageResourceFactory('/path/to/file.jpg');
 $objResource1 = $resourceFactory->create();

@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Reader;
+namespace Hbarcelos\GdWrapper\Io\Reader;
 
-use Hjpbarcelos\GdWrapper\Io\Exception;
-use Hjpbarcelos\GdWrapper\Resource\ImageResource;
+use Hbarcelos\GdWrapper\Io\Exception;
+use Hbarcelos\GdWrapper\Resource\ImageResource;
 
 /**
  * Defines an implementation of a I/O device for JPEG files.
@@ -18,7 +18,7 @@ class JpegReader extends AbstractReader {
 	 *
 	 * {@inheritdoc}
 	 *
-	 * @see Hjpbarcelos\GdWrapper\Io\Reader\AbstractReader::doRead()
+	 * @see Hbarcelos\GdWrapper\Io\Reader\AbstractReader::doRead()
 	 */
 	protected function doRead($pathName)
 	{
@@ -34,7 +34,7 @@ class JpegReader extends AbstractReader {
 	 *
 	 * @throws \InvalidArgumentException If image is not a valid JPEG file.
 	 *
-	 * @see Hjpbarcelos\GdWrapper\Io\Reader\AbstractReader::validateMimeType()
+	 * @see Hbarcelos\GdWrapper\Io\Reader\AbstractReader::validateMimeType()
 	 */
 	protected function validateMimeType($mimeType, $pathName)
 	{

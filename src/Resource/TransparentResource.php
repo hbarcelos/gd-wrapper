@@ -5,7 +5,7 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Defines a transparent true color image resource.
@@ -13,7 +13,7 @@ namespace Hjpbarcelos\GdWrapper\Resource;
 class TransparentResource extends EmptyResource {
     /**
      * {@inherit-doc}
-     * @see Hjpbarcelos\GdWrapper\Resource\EmptyResource::createRaw()
+     * @see Hbarcelos\GdWrapper\Resource\EmptyResource::createRaw()
      */
     protected function createRaw($width, $height) {
         $raw = imagecreatetruecolor($width, $height);

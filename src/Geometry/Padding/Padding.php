@@ -4,7 +4,7 @@
  *  
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Padding;
+namespace Hbarcelos\GdWrapper\Geometry\Padding;
 
 /**
  * Defines an abstraction for a magin distance. 

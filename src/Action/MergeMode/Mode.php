@@ -4,20 +4,20 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\MergeMode;
+namespace Hbarcelos\GdWrapper\Action\MergeMode;
 
-use Hjpbarcelos\GdWrapper\Action\Merge;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Action\Merge;
+use Hbarcelos\GdWrapper\Resource\Resource;
 
 interface Mode
 {
     /**
      * Obtains the merge resource to be used in the merging action.
      *
-     * @param Hjpbarcelos\GdWrapper\Action\Merge $action The action that will be performed.
-     * @param Hjpbarcelos\GdWrapper\Resource\Resource $src The image resource on which the action will be applied.
+     * @param Hbarcelos\GdWrapper\Action\Merge $action The action that will be performed.
+     * @param Hbarcelos\GdWrapper\Resource\Resource $src The image resource on which the action will be applied.
      *
-     * @return Hjpbarcelos\GdWrapper\Resource\Resource The merge resource.
+     * @return Hbarcelos\GdWrapper\Resource\Resource The merge resource.
      */
-    public function getMergeResource(Merge $action, Hjpbarcelos\GdWrapper\Resource\Resource $src);
+    public function getMergeResource(Merge $action, Hbarcelos\GdWrapper\Resource\Resource $src);
 }

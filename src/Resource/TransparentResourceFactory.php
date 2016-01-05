@@ -1,10 +1,10 @@
 <?php
 /**
- * Creates class \Hjpbarcelos\GdWrapper\Resource\EmptyResourceFactory
+ * Creates class \Hbarcelos\GdWrapper\Resource\EmptyResourceFactory
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Factory for creating new empty (blank) image resources.
@@ -23,6 +23,6 @@ class TransparentResourceFactory extends EmptyResourceFactory
     public function __construct($width, $height)
     {
         parent::__construct($width, $height);
-        $this->setClassName('\\Hjpbarcelos\\GdWrapper\\Resource\\TransparentResource');
+        $this->setClassName('\\Hbarcelos\\GdWrapper\\Resource\\TransparentResource');
     }
 }

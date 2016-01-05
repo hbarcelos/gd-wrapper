@@ -5,11 +5,11 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Action\MergeMode;
+namespace Hbarcelos\GdWrapper\Action\MergeMode;
 
-use Hjpbarcelos\GdWrapper\Action\Merge;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
-use Hjpbarcelos\GdWrapper\Resource\TransparentResourceFactory;
+use Hbarcelos\GdWrapper\Action\Merge;
+use Hbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Resource\TransparentResourceFactory;
 
 class SaveAlphaChannel implements Mode
 {
@@ -17,7 +17,7 @@ class SaveAlphaChannel implements Mode
      * Will just return the resource as it is.
      *
      * {@inherit-doc}
-     * @see Hjpbarcelos\GdWrapper\Action\MergeMode\Mode::getMergeResource()
+     * @see Hbarcelos\GdWrapper\Action\MergeMode\Mode::getMergeResource()
      */
     public function getMergeResource(Merge $action, Resource $src)
     {

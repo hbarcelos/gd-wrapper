@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Writer;
+namespace Hbarcelos\GdWrapper\Io\Writer;
 
-use Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory;
+use Hbarcelos\GdWrapper\Io\Reader\ReaderFactory;
 
 /**
  * Defines an abstract implementation of an output "device" for resources.
@@ -20,7 +20,7 @@ class WriterFactory
      *
      * For custom implementations of `Writer` interface, it must follow the convention:
      * <code>
-     * \Hjpbarcelos\GdWrapper\Io\Writer\&lt;TYPE&gt;Writer
+     * \Hbarcelos\GdWrapper\Io\Writer\&lt;TYPE&gt;Writer
      * </code>
      *
      * Notice that `&lt;TYPE&gt;` MUST be in `StudlyCaps`.
@@ -28,7 +28,7 @@ class WriterFactory
      * @param string $type The type of the image that will be written.
      * @param resource $resource The GD2 image resource that will be written.
      *
-     * @return Hjpbarcelos\GdWrapper\Io\Writer\Writer A concrete implementation of Writer.
+     * @return Hbarcelos\GdWrapper\Io\Writer\Writer A concrete implementation of Writer.
      *
      * @throws \DomainException If `$type` is not a supported file extension.
      * @throws \InvalidArgumentException If `$resource` is not a valid GD2 resource.

@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Position\Position;
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Position\Position;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Representa a proportional positioned cropping mode.
@@ -29,7 +29,7 @@ class Proportional extends Positioned
      * * `0.5` means that the resulting image will have half size of the original.
      * * `1.2` means that the resulting image will be 20% larger than the original.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Position\Position $position The position of the cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Position\Position $position The position of the cropping.
      * @param float $proportion The proportion of the cropping relative to the original image size.
      */
     public function __construct(Position $position, $proportion)
@@ -60,7 +60,7 @@ class Proportional extends Positioned
     
     /**
      * {@inherit-doc}
-     * @see Hjpbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
+     * @see Hbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
      */
     public function getCropInfo($width, $height)
     {

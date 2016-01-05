@@ -5,7 +5,7 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Abstract representation of a resource.
@@ -50,7 +50,7 @@ abstract class AbstractResource implements Resource
     /**
      * Clones the current object.
      *
-     * @return Hjpbarcelos\GdWrapper\Resource\Resource
+     * @return Hbarcelos\GdWrapper\Resource\Resource
      */
     final public function __clone()
     {
@@ -102,7 +102,7 @@ abstract class AbstractResource implements Resource
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Resource\Resource::getRaw()
+     * @see Hbarcelos\GdWrapper\Resource\Resource::getRaw()
      */
     public function getRaw()
     {
@@ -112,7 +112,7 @@ abstract class AbstractResource implements Resource
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Resource\Resource::getWidth()
+     * @see Hbarcelos\GdWrapper\Resource\Resource::getWidth()
      */
     public function getWidth()
     {
@@ -122,7 +122,7 @@ abstract class AbstractResource implements Resource
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Resource\Resource::setHeight()
+     * @see Hbarcelos\GdWrapper\Resource\Resource::setHeight()
      */
     public function getHeight()
     {

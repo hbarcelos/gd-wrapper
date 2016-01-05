@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\ResizeMode;
+namespace Hbarcelos\GdWrapper\Action\ResizeMode;
 
 interface Mode
 {
@@ -14,7 +14,7 @@ interface Mode
      * @param int $width The width of the original image.
      * @param int $height The height of the original image.
      *
-     * @return Hjpbarcelos\GdWrapper\Geometry\Point A point where the X coordinate represents
+     * @return Hbarcelos\GdWrapper\Geometry\Point A point where the X coordinate represents
      *     the width and the Y corrdinate represents the height.
      *
      * @throws \InvalidArgumentException On error calculating new image dimensions.

@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
 /**
  * Represents a cropping mode.
@@ -17,7 +17,7 @@ interface Mode
      * @param int $width The width of the original image.
      * @param int $height The height of the original image.
      *
-     * @return Hjpbarcelos\GdWrapper\Action\CropMode\CropInfo The information for cropping.
+     * @return Hbarcelos\GdWrapper\Action\CropMode\CropInfo The information for cropping.
      *
      * @throws \InvalidArgumentException On error calculating crop info.
      */

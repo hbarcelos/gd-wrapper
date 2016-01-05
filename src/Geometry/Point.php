@@ -4,7 +4,7 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry;
+namespace Hbarcelos\GdWrapper\Geometry;
 
 /**
  * Represents a discrete point in space Z^2.

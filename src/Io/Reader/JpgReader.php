@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Reader;
+namespace Hbarcelos\GdWrapper\Io\Reader;
 
-use Hjpbarcelos\GdWrapper\Resource\ImageResource;
+use Hbarcelos\GdWrapper\Resource\ImageResource;
 
 /**
  * Defines an implementation of a I/O device for JPEG files.

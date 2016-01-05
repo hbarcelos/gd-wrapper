@@ -4,10 +4,10 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
-use Hjpbarcelos\GdWrapper\Geometry\Padding\Padding;
+use Hbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Padding\Padding;
 
 /**
  * This crop mode crops from the egdes of the file with the padding parameters.
@@ -15,22 +15,22 @@ use Hjpbarcelos\GdWrapper\Geometry\Padding\Padding;
 class FromEdges implements Mode
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the top edge.
+     * @var Hbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the top edge.
      */
     private $top;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the right edge.
+     * @var Hbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the right edge.
      */
     private $right;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the bottom edge.
+     * @var Hbarcelos\GdWrapper\Geometry\Padding\Padding The distance from the bottom edge.
      */
     private $bottom;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Padding\Padding  The distance from the left edge.
+     * @var Hbarcelos\GdWrapper\Geometry\Padding\Padding  The distance from the left edge.
      */
     private $left;
 
@@ -51,10 +51,10 @@ class FromEdges implements Mode
      * * `__construct($top)`: All cropping edges will have the same distance from the
      *     original image edges.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $top The distance from the top edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $right [OPTIONAL] The distance from the right edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $bottom [OPTIONAL] The distance from the bottom edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $left [OPTIONAL] The distance from the left edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $top The distance from the top edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $right [OPTIONAL] The distance from the right edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $bottom [OPTIONAL] The distance from the bottom edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $left [OPTIONAL] The distance from the left edge.
      */
     public function __construct(Padding $top, Padding $right = null, Padding $bottom = null, Padding $left = null)
     {
@@ -72,10 +72,10 @@ class FromEdges implements Mode
     /**
      * Setups edges.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $top The distance from the top edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $right The distance from the right edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $bottom The distance from the bottom edge.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Padding\Padding $left The distance from the left edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $top The distance from the top edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $right The distance from the right edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $bottom The distance from the bottom edge.
+     * @param Hbarcelos\GdWrapper\Geometry\Padding\Padding $left The distance from the left edge.
      */
     private function setup(Padding $top, Padding $right, Padding $bottom, Padding $left)
     {
@@ -87,7 +87,7 @@ class FromEdges implements Mode
 
     /**
      * (non-PHPdoc)
-     * @see Hjpbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
+     * @see Hbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
      */
     public function getCropInfo($width, $height)
     {

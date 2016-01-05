@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Position;
+namespace Hbarcelos\GdWrapper\Geometry\Position;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * Represents a fixed point positioning mode.
@@ -42,7 +42,7 @@ class FixedPoint implements Position
 	
 	/**
 	 * {@inherit-doc}
-	 * @see Hjpbarcelos\GdWrapper\Geometry\Position\Position::getStartPoint()
+	 * @see Hbarcelos\GdWrapper\Geometry\Position\Position::getStartPoint()
 	 */
 	public function getStartPoint(Point $outsideDimensions, Point $insideDimensions)
 	{

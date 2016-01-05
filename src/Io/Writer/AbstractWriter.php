@@ -4,11 +4,11 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Io\Writer;
+namespace Hbarcelos\GdWrapper\Io\Writer;
 
-use Hjpbarcelos\GdWrapper\Resource\Resource;
-use Hjpbarcelos\GdWrapper\Io\Preset;
-use Hjpbarcelos\GdWrapper\Io\Exception;
+use Hbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Io\Preset;
+use Hbarcelos\GdWrapper\Io\Exception;
 
 /**
  * Defines an abstract implementation of a I/O device for resources.
@@ -33,7 +33,7 @@ abstract class AbstractWriter implements Writer
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Writer::getResource()
+     * @see Hbarcelos\GdWrapper\Io\Writer::getResource()
      */
     public function getResource()
     {
@@ -43,7 +43,7 @@ abstract class AbstractWriter implements Writer
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Writer::setResource()
+     * @see Hbarcelos\GdWrapper\Io\Writer::setResource()
      */
     public function setResource($resource)
     {
@@ -60,7 +60,7 @@ abstract class AbstractWriter implements Writer
      * 		Its value MUST be in a range from 0 to 100.
      *      Otherwise, it will be converted using `$quality % 101`
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Writer\Writer::write()
+     * @see Hbarcelos\GdWrapper\Io\Writer\Writer::write()
      */
     public function write(
         $pathName,
@@ -89,7 +89,7 @@ abstract class AbstractWriter implements Writer
 
     /**
      * Concrete implementors should implement this operation.
-     * This is method is executed at the end of {@link Hjpbarcelos\GdWrapper\Io\Writer\AbstractWriter::write()}
+     * This is method is executed at the end of {@link Hbarcelos\GdWrapper\Io\Writer\AbstractWriter::write()}
      *
      * @param string $pathName (optiojnal) A path where to save the resource.
      * @param int $quality (optional) The quality of generated image.
@@ -100,7 +100,7 @@ abstract class AbstractWriter implements Writer
      *
      * @throws Exception If can't write the contents on file system.
      *
-     * @see Hjpbarcelos\GdWrapper\Io\Preset
+     * @see Hbarcelos\GdWrapper\Io\Preset
      */
     abstract protected function doWrite(
         $pathName,

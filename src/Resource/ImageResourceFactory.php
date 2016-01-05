@@ -4,14 +4,14 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
-use Hjpbarcelos\GdWrapper\Resource\AbstractResourceFactory;
-use Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory;
-use Hjpbarcelos\GdWrapper\Resource\ImageResource;
+use Hbarcelos\GdWrapper\Resource\AbstractResourceFactory;
+use Hbarcelos\GdWrapper\Io\Reader\ReaderFactory;
+use Hbarcelos\GdWrapper\Resource\ImageResource;
 
 /**
- * Factory for `\Hjpbarcelos\GdWrapper\Resource\ImageResource` type.
+ * Factory for `\Hbarcelos\GdWrapper\Resource\ImageResource` type.
  */
 class ImageResourceFactory extends AbstractResourceFactory
 {
@@ -21,12 +21,12 @@ class ImageResourceFactory extends AbstractResourceFactory
     private $pathName;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Io\Reader\Reader The reader object that will create the resource.
+     * @var Hbarcelos\GdWrapper\Io\Reader\Reader The reader object that will create the resource.
      */
     private $reader;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory The factory for reader objects.
+     * @var Hbarcelos\GdWrapper\Io\Reader\ReaderFactory The factory for reader objects.
      */
     private $readerFactory;
     
@@ -34,7 +34,7 @@ class ImageResourceFactory extends AbstractResourceFactory
      * Creates a factory for image file based resources.
      *
      * @param string $pathName The path to the file from which resources will be created.
-     * @param Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory $readerFactory Factory for objects that will
+     * @param Hbarcelos\GdWrapper\Io\Reader\ReaderFactory $readerFactory Factory for objects that will
      *     read an image and create a GD2 resource form it.
      * @throws \DomainException If `$pathName` does not point to a supported format image file.
      */
@@ -45,14 +45,14 @@ class ImageResourceFactory extends AbstractResourceFactory
         }
         $this->setReaderFactory($readerFactory);
         
-        $this->setClassName('\\Hjpbarcelos\\GdWrapper\\Resource\\ImageResource');
+        $this->setClassName('\\Hbarcelos\\GdWrapper\\Resource\\ImageResource');
         $this->setPathName($pathName);
     }
     
     /**
      * Sets the factory for objects that will read an image and create a GD2 resource form it.
      *
-     * @param Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory $readerFactory
+     * @param Hbarcelos\GdWrapper\Io\Reader\ReaderFactory $readerFactory
      */
     public function setReaderFactory(ReaderFactory $readerFactory)
     {
@@ -62,7 +62,7 @@ class ImageResourceFactory extends AbstractResourceFactory
     /**
      * Sets the factory for objects that will read an image and create a GD2 resource form it.
      *
-     * @return Hjpbarcelos\GdWrapper\Io\Reader\ReaderFactory
+     * @return Hbarcelos\GdWrapper\Io\Reader\ReaderFactory
      */
     public function getReaderFactory()
     {
@@ -76,7 +76,7 @@ class ImageResourceFactory extends AbstractResourceFactory
 	 *
 	 * For custom implementations of Reader interface, they must follow the convention:
 	 * <code>
-	 * \Hjpbarcelos\GdWrapper\Io\Writer\&lt;TYPE&gt;Writer
+	 * \Hbarcelos\GdWrapper\Io\Writer\&lt;TYPE&gt;Writer
 	 * </code>
 	 *
 	 * Notice that `<TYPE>` MUST be in `StudlyCaps`.
@@ -95,7 +95,7 @@ class ImageResourceFactory extends AbstractResourceFactory
 	 *
 	 * {@inheritdoc}
 	 *
-	 * @see Hjpbarcelos\GdWrapper\Resource\AbstractResourceFactory::create()
+	 * @see Hbarcelos\GdWrapper\Resource\AbstractResourceFactory::create()
 	 */
 	public function create()
 	{

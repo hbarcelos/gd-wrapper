@@ -4,11 +4,11 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action;
+namespace Hbarcelos\GdWrapper\Action;
 
-use Hjpbarcelos\GdWrapper\Action\CropMode\Mode;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
-use Hjpbarcelos\GdWrapper\Resource\EmptyResourceFactory;
+use Hbarcelos\GdWrapper\Action\CropMode\Mode;
+use Hbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Resource\EmptyResourceFactory;
 
 /**
  * Abstraction for cropping an image.
@@ -16,7 +16,7 @@ use Hjpbarcelos\GdWrapper\Resource\EmptyResourceFactory;
 class Crop extends AbstractAction
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Action\CropMode\Mode The cropping mode
+     * @var Hbarcelos\GdWrapper\Action\CropMode\Mode The cropping mode
      */
     private $mode;
     
@@ -27,7 +27,7 @@ class Crop extends AbstractAction
      *
      * @param Mode $mode The cropping mode.
      *
-     * @see Hjpbarcelos\GdWrapper\Action\AbstractAction::__construct()
+     * @see Hbarcelos\GdWrapper\Action\AbstractAction::__construct()
      */
     public function __construct(Mode $mode, $resourceFactoryClass = null)
     {
@@ -37,7 +37,7 @@ class Crop extends AbstractAction
     
     /**
      * (non-PHPdoc)
-     * @see Hjpbarcelos\GdWrapper\Action\Action::execute()
+     * @see Hbarcelos\GdWrapper\Action\Action::execute()
      */
     public function execute(Resource $src)
     {

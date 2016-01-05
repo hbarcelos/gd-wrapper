@@ -4,7 +4,7 @@
  *  
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Geometry\Padding;
+namespace Hbarcelos\GdWrapper\Geometry\Padding;
 
 /**
  * Fixed padding independ from the reference dimension.
@@ -45,7 +45,7 @@ class Fixed implements Padding
  	 *  
 	 * {@inherit-doc}
 	 * 
-	 * @see Hjpbarcelos\GdWrapper\Geometry\Padding\Padding::getDistance()
+	 * @see Hbarcelos\GdWrapper\Geometry\Padding\Padding::getDistance()
 	 */
 	public function getDistance($refDimension)
 	{

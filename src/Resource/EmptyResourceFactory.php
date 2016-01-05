@@ -1,10 +1,10 @@
 <?php
 /**
- * Creates class \Hjpbarcelos\GdWrapper\Resource\EmptyResourceFactory
+ * Creates class \Hbarcelos\GdWrapper\Resource\EmptyResourceFactory
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Resource;
+namespace Hbarcelos\GdWrapper\Resource;
 
 /**
  * Factory for creating new empty (blank) image resources.
@@ -32,7 +32,7 @@ class EmptyResourceFactory extends AbstractResourceFactory
      */
     public function __construct($width, $height)
     {
-        parent::__construct('\\Hjpbarcelos\\GdWrapper\\Resource\\EmptyResource');
+        parent::__construct('\\Hbarcelos\\GdWrapper\\Resource\\EmptyResource');
         $this->setWidth($width);
         $this->setHeight($height);
     }
@@ -84,7 +84,7 @@ class EmptyResourceFactory extends AbstractResourceFactory
     /**
      * {@inheritdoc}
      *
-     * @see Hjpbarcelos\GdWrapper\Resource\AbstractResourceFactory::create()
+     * @see Hbarcelos\GdWrapper\Resource\AbstractResourceFactory::create()
      */
     public function create()
     {

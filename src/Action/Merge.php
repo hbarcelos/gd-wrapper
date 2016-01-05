@@ -4,13 +4,13 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action;
+namespace Hbarcelos\GdWrapper\Action;
 
-use Hjpbarcelos\GdWrapper\Action\MergeMode\Mode;
-use Hjpbarcelos\GdWrapper\Action\MergeMode\DefaultMerge;
-use Hjpbarcelos\GdWrapper\Geometry\Point;
-use Hjpbarcelos\GdWrapper\Geometry\Position\Position;
-use Hjpbarcelos\GdWrapper\Resource\Resource;
+use Hbarcelos\GdWrapper\Action\MergeMode\Mode;
+use Hbarcelos\GdWrapper\Action\MergeMode\DefaultMerge;
+use Hbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Position\Position;
+use Hbarcelos\GdWrapper\Resource\Resource;
 
 /**
  * Abstraction for cropping an image.
@@ -18,12 +18,12 @@ use Hjpbarcelos\GdWrapper\Resource\Resource;
 class Merge extends AbstractAction
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Resource\Resource The image that will be merged into another images.
+     * @var Hbarcelos\GdWrapper\Resource\Resource The image that will be merged into another images.
      */
     private $mergeResource;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Position\Position The position where the merge resource will be placed.
+     * @var Hbarcelos\GdWrapper\Geometry\Position\Position The position where the merge resource will be placed.
      */
     private $position;
     
@@ -33,7 +33,7 @@ class Merge extends AbstractAction
     private $opacity;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Action\MergeMode\Mode The merging mode.
+     * @var Hbarcelos\GdWrapper\Action\MergeMode\Mode The merging mode.
      */
     private $mode;
     
@@ -46,12 +46,12 @@ class Merge extends AbstractAction
      * transparent merging (that is, no visible modifications) and `100` means opaque merging,
      * with all the pixels of the merge resource overlaping the original one in the merge area.
      *
-     * @param Hjpbarcelos\GdWrapper\Resource\Resource $merge The image resource that will be merged into another images.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Position\Position $position The position where the merge resource will be placed.
+     * @param Hbarcelos\GdWrapper\Resource\Resource $merge The image resource that will be merged into another images.
+     * @param Hbarcelos\GdWrapper\Geometry\Position\Position $position The position where the merge resource will be placed.
      * @param int $opacity [OPTIONAL] The opacity of the merged image.
-     * @param Hjpbarcelos\GdWrapper\Action\MergeMode\Mode $mode [OPTIONAL] The merging mode.
+     * @param Hbarcelos\GdWrapper\Action\MergeMode\Mode $mode [OPTIONAL] The merging mode.
      *
-     * @see Hjpbarcelos\GdWrapper\Action\AbstractAction::__construct()
+     * @see Hbarcelos\GdWrapper\Action\AbstractAction::__construct()
      */
     public function __construct(Resource $merge, Position $position, $opacity = 100, Mode $mode = null, $resourceFactoryClass = null)
     {
@@ -70,7 +70,7 @@ class Merge extends AbstractAction
     /**
      * Obtains the merge resource of this action.
      *
-     * @return Hjpbarcelos\GdWrapper\Resource\Resource The merge resource.
+     * @return Hbarcelos\GdWrapper\Resource\Resource The merge resource.
      */
     public function getMergeResource()
     {
@@ -90,7 +90,7 @@ class Merge extends AbstractAction
     /**
      * Obtains the position of merging of this action.
      *
-     * @return Hjpbarcelos\GdWrapper\Geometry\Position\Position
+     * @return Hbarcelos\GdWrapper\Geometry\Position\Position
      */
     public function getPosition()
     {
@@ -100,7 +100,7 @@ class Merge extends AbstractAction
     /**
      * Sets the merge position of this action.
      *
-     * @param Hjpbarcelos\GdWrapper\Geometry\Position\Position $position The position.
+     * @param Hbarcelos\GdWrapper\Geometry\Position\Position $position The position.
      */
     public function setPosition(Position $position)
     {
@@ -142,9 +142,9 @@ class Merge extends AbstractAction
     /**
      * Shortcut for obtaining the start point of the position for the merged image.
      *
-     * @param Hjpbarcelos\GdWrapper\Action\MergeMode\Mode $mode The merge mode.
+     * @param Hbarcelos\GdWrapper\Action\MergeMode\Mode $mode The merge mode.
      *
-     * @return Hjpbarcelos\GdWrapper\Geometry\Point The starting point of the position for the merged image.
+     * @return Hbarcelos\GdWrapper\Geometry\Point The starting point of the position for the merged image.
      */
     public function getStartPoint(Resource $src)
     {
@@ -160,7 +160,7 @@ class Merge extends AbstractAction
     /**
      * Obtains the merge mode.
      *
-     * @return Hjpbarcelos\GdWrapper\Action\MergeMode\Mode
+     * @return Hbarcelos\GdWrapper\Action\MergeMode\Mode
      */
     public function getMode()
     {
@@ -170,7 +170,7 @@ class Merge extends AbstractAction
     /**
      * Sets the merge mode.
      *
-     * @param Hjpbarcelos\GdWrapper\Action\MergeMode\Mode $mode The merge mode.
+     * @param Hbarcelos\GdWrapper\Action\MergeMode\Mode $mode The merge mode.
      */
     public function setMode(Mode $mode)
     {
@@ -179,7 +179,7 @@ class Merge extends AbstractAction
     
     /**
      * {@inherit-doc}
-     * @see Hjpbarcelos\GdWrapper\Action\Action::execute()
+     * @see Hbarcelos\GdWrapper\Action\Action::execute()
      */
     public function execute(Resource $src)
     {

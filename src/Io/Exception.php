@@ -5,7 +5,7 @@
  * @author Henrique Barcelos
  */
 
-namespace Hjpbarcelos\GdWrapper\Io;
+namespace Hbarcelos\GdWrapper\Io;
 
 /**
  * Exception that indicates an I/O Exception.

@@ -4,9 +4,9 @@
  *
  * @author Henrique Barcelos
  */
-namespace Hjpbarcelos\GdWrapper\Action\CropMode;
+namespace Hbarcelos\GdWrapper\Action\CropMode;
 
-use Hjpbarcelos\GdWrapper\Geometry\Point;
+use Hbarcelos\GdWrapper\Geometry\Point;
 
 /**
  * This crop mode crops from a point to another point.
@@ -15,20 +15,20 @@ use Hjpbarcelos\GdWrapper\Geometry\Point;
 class FixedPoints implements Mode
 {
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Point The start point of cropping.
+     * @var Hbarcelos\GdWrapper\Geometry\Point The start point of cropping.
      */
     private $start;
     
     /**
-     * @var Hjpbarcelos\GdWrapper\Geometry\Point The end point of cropping.
+     * @var Hbarcelos\GdWrapper\Geometry\Point The end point of cropping.
      */
     private $end;
     
     /**
      * Creates a FixedPoints crop mode.
      * 
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $start The start point of cropping.
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $end The end point of cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Point $start The start point of cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Point $end The end point of cropping.
      */
     public function __construct(Point $start, Point $end)
     {
@@ -39,7 +39,7 @@ class FixedPoints implements Mode
     /**
      * Sets the start point of cropping.
      * 
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $start The start point of cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Point $start The start point of cropping.
      * 
      * @return void
      */
@@ -51,7 +51,7 @@ class FixedPoints implements Mode
     /**
      * Sets the end point of cropping.
      * 
-     * @param Hjpbarcelos\GdWrapper\Geometry\Point $end The end point of cropping.
+     * @param Hbarcelos\GdWrapper\Geometry\Point $end The end point of cropping.
      * 
      * @return void
      */
@@ -62,7 +62,7 @@ class FixedPoints implements Mode
     
     /**
      * (non-PHPdoc)
-     * @see Hjpbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
+     * @see Hbarcelos\GdWrapper\Action\CropMode\Mode::getCropInfo()
      */
     public function getCropInfo($width, $height)
     {
