@@ -466,5 +466,5 @@ $crop->execute($objResource3);
 **@TODO**
 
   [1]: http://www.php-fig.org/psr/psr-4/
-  [2]: https://github.com/php-fig/fig-standards/blob/master/accepted/psr-4-autoloader-examples.md
+  [2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md
 
